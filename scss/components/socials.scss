@@ -1,0 +1,30 @@
+
+.socials {
+  display: flex;
+}
+.socials__item{
+  border-radius: 50% 50%;
+  overflow: hidden;
+  margin-right: 20px;
+  color: $lightBlue;
+  transition: color .2s;
+
+  &:hover {
+    color: $dark;
+  }
+  &-link {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    font-size: 0;
+  }
+  &-svg {
+    width: 60%;
+    height: 60%;
+    fill: currentColor;
+  }
+}

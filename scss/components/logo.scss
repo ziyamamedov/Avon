@@ -1,0 +1,14 @@
+.logo {
+  display: block;
+  width: 180px;
+  height: 100px;
+  transition: color .2s;
+  &:hover {
+    color: $dark;
+  }
+  &__svg {
+    fill: currentColor;
+    width: 100%;
+    height: 100%;
+  }
+}

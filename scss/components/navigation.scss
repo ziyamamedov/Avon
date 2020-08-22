@@ -1,0 +1,30 @@
+.nav {
+  color:$lightBlue;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.nav__item {
+  transition: color .2s;
+  transition: border-bottom-color .2s;
+  margin-bottom: 10px;
+  border-bottom: 2px solid transparent;
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &-link {
+    display: block;
+    padding: 5px 0;
+  }
+  &:hover {
+    color: $dark;
+    border-bottom-color: #000;
+  }
+  &--active {
+    color: $dark;
+    border-bottom-color: #000;
+  }
+}

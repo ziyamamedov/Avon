@@ -1,0 +1,49 @@
+.header {
+  background-color: $lightBlue;
+  color: white;
+  padding: 20px 0;
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+}
+
+
+.title {
+  font-size: 21px;
+  font-weight: normal;
+  font-style: italic;
+  &-name {
+    font-size: 18px;
+    font-weight: normal;
+    font-style: italic;
+  }
+}
+
+.contacts {
+  &__one {
+    margin-bottom: 10px;
+  }
+}
+.phone {
+  font-size: 21px;
+  font-weight: bold;
+  transition: color .2s;
+  
+  &:hover {
+    color: $dark;
+  }
+}

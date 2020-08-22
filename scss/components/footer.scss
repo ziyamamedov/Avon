@@ -1,0 +1,16 @@
+.footer {
+  background-color: $lightBlue;
+  color: white;
+  padding: 20px 0;
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.copyright {
+  max-width: 400px;
+  font-weight: bold;
+}
+
