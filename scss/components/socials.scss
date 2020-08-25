@@ -12,15 +12,23 @@
   &:hover {
     color: $dark;
   }
+  &:last-child {
+    margin-right: 0;
+  }
   &-link {
     display: flex;
-    width: 30px;
-    height: 30px;
+    width: 2.5rem;
+    height: 2.5rem;
     
     background-color: #fff;
     justify-content: center;
     align-items: center;
     font-size: 0;
+
+    @media screen and (max-width: 630px) {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
   }
   &-svg {
     width: 60%;

@@ -1,4 +1,47 @@
 .sidebar {
-  padding-right: 20px;
+  padding-right: 1.875rem;
   border-right: 1px solid #e8e8ec;
+
+  .contacts {
+    display: none;
+  }
+
+  @include tablets {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    transition: right .3s;
+    border-right: none;
+    border-left: 1px solid #e8e8ec;;
+    background-color: #fff;
+    padding: 200px 65px 100px 65px;
+
+    &--active {
+      right: 0;
+    }
+
+    .contacts {
+      display: initial;
+      color: $lightBlue;
+    }
+  }
+
+  @include phones {
+    width: 100vw;
+  }
+}
+
+.clsbtn {
+  display: none;
+  position: absolute;
+  top: 65px;
+  right: 45px;
+
+  @include tablets {
+    display: initial;
+  }
+}
+.clsbtn-svg {
+  width: 25px;
+  height: 25px;
 }

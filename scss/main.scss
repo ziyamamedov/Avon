@@ -1,11 +1,14 @@
 //Settings
 @import './settings/normalize';
 @import './settings/vars';
+@import './settings/mixins';
 @import './settings/base';
+
 
 //Components
 @import './components/socials';
 @import './components/header';
+@import './components/hamburger';
 @import './components/footer';
 @import './components/body';
 @import './components/logo';

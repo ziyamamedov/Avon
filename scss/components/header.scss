@@ -5,44 +5,85 @@
   .container {
     display: flex;
     justify-content: space-between;
+
+    @include phones {
+      
+    }
   }
 
-  &__middle {
+  .logo {
+    margin-bottom: 10px;
+  }
+  // &__middle {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   text-align: center;
+  //   line-height: 1.2;
+
+  //   @include phones {
+  //     display: none;
+  //   }
+  // }
+  &__left {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    line-height: 1.2;
+    align-items: center;
   }
-
+  
   &__right {
     display: flex;
     align-items: center;
   }
-}
 
-
-.title {
-  font-size: 21px;
-  font-weight: normal;
-  font-style: italic;
-  &-name {
-    font-size: 18px;
-    font-weight: normal;
-    font-style: italic;
+  .contacts {
+    @include tablets {
+      display: none;
+    }
   }
 }
+
+.header__title {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+// .title {
+//   font-size: 1.875rem;
+//   font-weight: normal;
+//   font-style: italic;
+//   &-name {
+//     font-size: 1.5625rem;
+//     font-weight: normal;
+//     font-style: italic;
+//   }
+// }
 
 .contacts {
   &__one {
     margin-bottom: 10px;
+    @media screen and (max-width: 630px) {
+      margin-bottom: 20px;
+    }
+  }
+  &__two {
+    display: flex;
+
+    @media screen and (max-width: 630px) {
+      justify-content: center;
+    }
+    
   }
 }
+
 .phone {
-  font-size: 21px;
+  font-size: 1.75rem;
   font-weight: bold;
   transition: color .2s;
   
+  @include tablets {
+    font-size: 24px;
+  }
   &:hover {
     color: $dark;
   }

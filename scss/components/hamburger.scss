@@ -1,0 +1,17 @@
+.hamburger {
+  display: none;
+  @include tablets {
+    display: initial;
+  }
+
+  &__block {
+    width: 24px;
+    height: 4px;
+    background-color: #fff;
+    margin-bottom: 4px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

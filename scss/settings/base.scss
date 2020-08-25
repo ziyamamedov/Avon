@@ -1,6 +1,19 @@
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: 16px;
+  @include desktop {
+    font-size: 14px;
+  }
+
+  @include tablets {
+    font-size: 10px;
+  }
+  @include phones {
+    font-size: 8px;
+  }
+}
 html, body {
   height: 100%;
 }
@@ -38,5 +51,15 @@ a {
 .container {
   margin: 0 auto;
   width: 95%;
-  max-width: $container;
+  max-width: $container-hd;
+
+  @include desktop {
+    max-width: $container-desktop;
+  }
+  @include tablets {
+    max-width: $container-tablets;
+  }
+  @include phones {
+    max-width: $container-phones;
+  }
 }

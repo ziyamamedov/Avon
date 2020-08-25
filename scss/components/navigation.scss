@@ -1,9 +1,19 @@
 .nav {
   color:$lightBlue;
-  font-size: 12px;
+  font-size: 0.875rem;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 2px;
+
+  @include tablets {
+    font-size: 1.5rem;
+    margin-bottom: 55px;
+  }
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
 }
 
 .nav__item {
@@ -26,5 +36,9 @@
   &--active {
     color: $dark;
     border-bottom-color: #000;
+  }
+
+  @include tablets {
+    margin-bottom: 35px;
   }
 }
