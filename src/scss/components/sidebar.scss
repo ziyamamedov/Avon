@@ -4,6 +4,12 @@
 
   .contacts {
     display: none;
+    
+    &__two {
+      @media screen and (max-width: 630px) {
+        justify-content: flex-start;
+      }
+    }
   }
 
   @include tablets {
@@ -28,14 +34,16 @@
 
   @include phones {
     width: 100vw;
+    height: 100vh;
+    padding: 150px 100px 0 100px;
   }
 }
 
 .clsbtn {
   display: none;
   position: absolute;
-  top: 65px;
-  right: 45px;
+  top: 47px;
+  right: 25px;
 
   @include tablets {
     display: initial;

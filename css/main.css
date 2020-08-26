@@ -623,6 +623,11 @@ a {
 .sidebar .contacts {
   display: none;
 }
+@media screen and (max-width: 630px) {
+  .sidebar .contacts__two {
+    justify-content: flex-start;
+  }
+}
 @media screen and (max-width: 768px) {
   .sidebar {
     position: fixed;
@@ -645,14 +650,16 @@ a {
 @media screen and (max-width: 480px) {
   .sidebar {
     width: 100vw;
+    height: 100vh;
+    padding: 150px 100px 0 100px;
   }
 }
 
 .clsbtn {
   display: none;
   position: absolute;
-  top: 65px;
-  right: 45px;
+  top: 47px;
+  right: 25px;
 }
 @media screen and (max-width: 768px) {
   .clsbtn {
