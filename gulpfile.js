@@ -46,7 +46,7 @@ task('styles', () => {
 });
 
 task('scripts', () => {
-  return src([ ...JS_LIBS, './src/js/*.js'])
+  return src([ ...JS_LIBS, './src/scripts/*.js'])
   .pipe(gulpif(env === 'dev', sourcemaps.init()))
   .pipe(concat('main.min.js'))
   // .pipe(babel({
