@@ -14,6 +14,8 @@ const uglify = require('gulp-uglify-es').default;//Minification of js code
 const {SRC_PATH, DIST_PATH, STYLE_LIBS, JS_LIBS} = require('./gulp.config'); //Settings from gulp.config
 const gulpif = require('gulp-if'); // Conditionally running a task
 const env = process.env.NODE_ENV; // Global variable from package.json
+const pug = require('gulp-pug');
+
 
 const toClean = [
   `${DIST_PATH}/*.html`,
@@ -25,9 +27,14 @@ task('clean', ()=>{
   return src(toClean, { read: false }).pipe(rm())
 });
 
-task('copy:html', () => {
-  return src(`${SRC_PATH}/*.html`).pipe(dest(DIST_PATH)).pipe(reload({stream:true}))
-}); 
+task('pug', () => {
+  return src(`${SRC_PATH}/pug/pages/*.pug`)
+    .pipe(pug({
+      pretty:true
+    }))
+    .pipe(dest(DIST_PATH))
+    .pipe(reload({stream:true}))
+});
 
 task('styles', () => {
   return src([ ...STYLE_LIBS, 'src/scss/main.scss'])
@@ -68,10 +75,10 @@ task('server', () => {
 
 task('watch', function(){
   watch(`${SRC_PATH}/scss/**/*.scss`, series('styles'));
-  watch(`${SRC_PATH}/*.html`, series('copy:html'));
+  watch(`${SRC_PATH}/pug/**/*.pug`, series('pug'));
   watch(`${SRC_PATH}/js/*.js`, series('scripts')); 
 })
 
 
-task('build', series('clean', parallel('copy:html', 'styles', 'scripts')));
-task('default', series('clean', parallel('copy:html', 'styles', 'scripts'), parallel('server', 'watch')));
+task('build', series('clean', parallel('pug', 'styles', 'scripts')));
+task('default', series('clean', parallel('pug', 'styles', 'scripts'), parallel('server', 'watch')));
