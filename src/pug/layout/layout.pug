@@ -8,95 +8,97 @@ head
   link(rel='stylesheet', href='./main.css')
   block title
     title Oriflame | Сайт независимого кунсультанта
-.wrapper
-  
-  header.header
-    .container
-      .header__left
-        a.logo(href='./index.html')
-          svg.logo__svg
-            use(xlink:href='./images/icons/sprite.svg#ori_logo')
-        .header__title &Scy;&acy;&jcy;&tcy; &ncy;&iecy;&zcy;&acy;&vcy;&icy;&scy;&icy;&mcy;&ocy;&gcy;&ocy; &kcy;&ocy;&ncy;&scy;&ucy;&lcy;&softcy;&tcy;&acy;&ncy;&tcy;&acy;
-      .header__right
-        .contacts
-          .contacts__one
-            .phone
-              a.phone__num(href='tel:+79632230107')  8-963-223-01-07
-          .contacts__two
-            ul.socials
-              li.socials__item.socials__item--vk
-                a.socials__item-link(href='#')
-                  svg.socials__item-svg
-                    use(xlink:href='./images/icons/sprite.svg#vk_logo')
-              li.socials__item.socials__item--insta
-                a.socials__item-link(href='#')
-                  svg.socials__item-svg
-                    use(xlink:href='./images/icons/sprite.svg#insta_logo')
-              li.socials__item.socials__item--fb
-                a.socials__item-link(href='#')
-                  svg.socials__item-svg
-                    use(xlink:href='./images/icons/sprite.svg#fb_logo')
-        #hamBtn.hamburger
-          .hamburger__block
-          .hamburger__block
-          .hamburger__block
-  
 
-  main.main
-    .container
-      aside.sidebar
-        #hamClsBtn.clsbtn
-          svg.clsbtn-svg
-            use(xlink:href='./images/icons/sprite.svg#clsBtn')
-        block nav
-        .contacts
-          .contacts__one
-            .phone
-              a.phone__num(href='tel:+79632230107')  8-963-223-01-07
-          .contacts__two
-            ul.socials
-              li.socials__item.socials__item--vk
-                a.socials__item-link(href='#')
-                  svg.socials__item-svg
-                    use(xlink:href='./images/icons/sprite.svg#vk_logo')
-              li.socials__item.socials__item--insta
-                a.socials__item-link(href='#')
-                  svg.socials__item-svg
-                    use(xlink:href='./images/icons/sprite.svg#insta_logo')
-              li.socials__item.socials__item--fb
-                a.socials__item-link(href='#')
-                  svg.socials__item-svg
-                    use(xlink:href='./images/icons/sprite.svg#fb_logo')
-      .maincontent
-        block content
+body
+  .wrapper
+    
+    header.header
+      .container
+        .header__left
+          a.logo(href='./index.html')
+            svg.logo__svg
+              use(xlink:href='./images/icons/sprite.svg#ori_logo')
+          .header__title &Scy;&acy;&jcy;&tcy; &ncy;&iecy;&zcy;&acy;&vcy;&icy;&scy;&icy;&mcy;&ocy;&gcy;&ocy; &kcy;&ocy;&ncy;&scy;&ucy;&lcy;&softcy;&tcy;&acy;&ncy;&tcy;&acy;
+        .header__right
+          .contacts
+            .contacts__one
+              .phone
+                a.phone__num(href='tel:+79632230107')  8-963-223-01-07
+            .contacts__two
+              ul.socials
+                li.socials__item.socials__item--vk
+                  a.socials__item-link(href='#')
+                    svg.socials__item-svg
+                      use(xlink:href='./images/icons/sprite.svg#vk_logo')
+                li.socials__item.socials__item--insta
+                  a.socials__item-link(href='#')
+                    svg.socials__item-svg
+                      use(xlink:href='./images/icons/sprite.svg#insta_logo')
+                li.socials__item.socials__item--fb
+                  a.socials__item-link(href='#')
+                    svg.socials__item-svg
+                      use(xlink:href='./images/icons/sprite.svg#fb_logo')
+          #hamBtn.hamburger
+            .hamburger__block
+            .hamburger__block
+            .hamburger__block
+    
+
+    main.main
+      .container
+        aside.sidebar
+          #hamClsBtn.clsbtn
+            svg.clsbtn-svg
+              use(xlink:href='./images/icons/sprite.svg#clsBtn')
+          block nav
+          .contacts
+            .contacts__one
+              .phone
+                a.phone__num(href='tel:+79632230107')  8-963-223-01-07
+            .contacts__two
+              ul.socials
+                li.socials__item.socials__item--vk
+                  a.socials__item-link(href='#')
+                    svg.socials__item-svg
+                      use(xlink:href='./images/icons/sprite.svg#vk_logo')
+                li.socials__item.socials__item--insta
+                  a.socials__item-link(href='#')
+                    svg.socials__item-svg
+                      use(xlink:href='./images/icons/sprite.svg#insta_logo')
+                li.socials__item.socials__item--fb
+                  a.socials__item-link(href='#')
+                    svg.socials__item-svg
+                      use(xlink:href='./images/icons/sprite.svg#fb_logo')
+        .maincontent
+          block content
 
 
-  footer.footer
-    .container
-      .footer__left
-        .copyright
-          p © 2020. Все права защищены.Сайт независимого консультанта Орифлейм При оформлении сайта частично использованы материалы официального сайта компании www.oriflame.ru
-      .footer__right
-        a.logo(href='./index.html')
-          svg.logo__svg
-            use(xlink:href='./images/icons/sprite.svg#ori_logo')
-        .contacts
-          .contacts__one
-            .phone
-              a.phone__num(href='tel:+79632230107')  8-963-223-01-07
-          .contacts__two
-            ul.socials
-              li.socials__item.socials__item--vk
-                a.socials__item-link(href='#')
-                  svg.socials__item-svg
-                    use(xlink:href='./images/icons/sprite.svg#vk_logo')
-              li.socials__item.socials__item--insta
-                a.socials__item-link(href='#')
-                  svg.socials__item-svg
-                    use(xlink:href='./images/icons/sprite.svg#insta_logo')
-              li.socials__item.socials__item--fb
-                a.socials__item-link(href='#')
-                  svg.socials__item-svg
-                    use(xlink:href='./images/icons/sprite.svg#fb_logo')
-// End of wrapper
-script(src='./main.min.js')
+    footer.footer
+      .container
+        .footer__left
+          .copyright
+            p © 2020. Все права защищены.Сайт независимого консультанта Орифлейм При оформлении сайта частично использованы материалы официального сайта компании www.oriflame.ru
+        .footer__right
+          a.logo(href='./index.html')
+            svg.logo__svg
+              use(xlink:href='./images/icons/sprite.svg#ori_logo')
+          .contacts
+            .contacts__one
+              .phone
+                a.phone__num(href='tel:+79632230107')  8-963-223-01-07
+            .contacts__two
+              ul.socials
+                li.socials__item.socials__item--vk
+                  a.socials__item-link(href='#')
+                    svg.socials__item-svg
+                      use(xlink:href='./images/icons/sprite.svg#vk_logo')
+                li.socials__item.socials__item--insta
+                  a.socials__item-link(href='#')
+                    svg.socials__item-svg
+                      use(xlink:href='./images/icons/sprite.svg#insta_logo')
+                li.socials__item.socials__item--fb
+                  a.socials__item-link(href='#')
+                    svg.socials__item-svg
+                      use(xlink:href='./images/icons/sprite.svg#fb_logo')
+  // End of wrapper
+  script(src='./main.min.js')

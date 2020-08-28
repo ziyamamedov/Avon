@@ -7,4 +7,17 @@ block nav
   +nav('nav', items, 2)
 
 block content
-  h1 Регистрация в Oriflame
+  h1.title Регистрация в Oriflame
+  
+  
+  form.reg-form(action="#")
+    label.form__label
+      .form__label__title Фамилия
+      input(type="text", name="sername")
+    label.form__label
+      .form__label__title Имя Отчество
+      input(type="text", name="name")
+    label.form__label
+      .form__label__title Email
+      input(type="email", name="email")
+

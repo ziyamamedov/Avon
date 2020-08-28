@@ -6,5 +6,5 @@ hamBtn.addEventListener('click', () => {
   sidebar.classList.add('sidebar--active');
 })
 clsBtn.addEventListener('click', () => {
-  sidebar.classList.remove('sidebar--active');
+  sidebar.classList.remove('sidebar--active'); 
 })
