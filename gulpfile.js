@@ -52,8 +52,18 @@ task('styles', () => {
     .pipe(reload({stream:true}));
 });
 
+task('js-libs', () => {
+  return src(JS_LIBS)
+  .pipe(gulpif(env === 'dev', sourcemaps.init()))
+  .pipe(concat('libs.min.js'))
+  .pipe(gulpif(env === 'prod', uglify()))
+  .pipe(gulpif(env === 'dev', sourcemaps.write()))
+  .pipe(dest(DIST_PATH))
+})
+
+
 task('scripts', () => {
-  return src([ ...JS_LIBS, './src/scripts/*.js'])
+  return src('./src/scripts/*.js')
   .pipe(gulpif(env === 'dev', sourcemaps.init()))
   .pipe(concat('main.min.js'))
   .pipe(babel({
@@ -78,11 +88,7 @@ task('watch', function(){
   watch(`${SRC_PATH}/pug/**/*.pug`, series('pug'));
   watch(`${SRC_PATH}/scripts/*.js`, series('scripts')); 
 })
-// gulp.task('watch', function () {
-//   watch(`${SRC_PATH}/scss/**/*.scss`).on('change', series('styles', reload));
-//   watch(path.src.html).on('change', gulp.series(html, browserSync.reload));
-// });
 
 
-task('build', series('clean', parallel('pug', 'styles', 'scripts')));
-task('default', series('clean', parallel('pug', 'styles', 'scripts'), parallel('server', 'watch')));
+task('build', series('clean', parallel('pug', 'styles', 'js-libs', 'scripts')));
+task('default', series('clean', parallel('pug', 'styles', 'js-libs', 'scripts'), parallel('server', 'watch')));

@@ -1,0 +1,44 @@
+
+.form__label{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form__label-title {
+  margin-bottom: 5px;
+  &:after {
+    content: '*';
+    color: red;
+    font-size: 13px;
+    vertical-align: top;
+  }
+
+  &--not-req{
+    &::after {
+      content: "";
+    }
+  }
+}
+
+.form__row-top {
+  display: flex;
+}
+.form__row-bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__col-left {
+  margin-right: 50px;
+}
+.form__col-right {
+  flex: 1;
+}
+
+.form__select-date {
+  margin-right: 10px;
+  &:last-child {
+    margin-right: 0;
+  }
+}

@@ -6,7 +6,8 @@ module.exports = {
   ],
   JS_LIBS: [
     './node_modules/jquery/dist/jquery.js',
-    'node_modules/jquery-touchswipe/jquery.touchSwipe.js'
+    './node_modules/jquery-touchswipe/jquery.touchSwipe.js',
+    './node_modules/suggestions-jquery/dist/js/jquery.suggestions.js'
   ]
 
 }

@@ -11,7 +11,8 @@
   "dependencies": {
     "jquery": "^3.4.1",
     "jquery-touchswipe": "^1.6.19",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "suggestions-jquery": "^20.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",

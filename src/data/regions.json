@@ -1,0 +1,632 @@
+[
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Адыгея Респ",
+    "Value": "2"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Алтай Респ",
+    "Value": "3"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Алтайский край",
+    "Value": "4"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Амурская обл",
+    "Value": "5"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Архангельская обл",
+    "Value": "6"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Астраханская обл",
+    "Value": "7"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Байконур г",
+    "Value": "86"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Башкортостан Респ",
+    "Value": "8"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Белгородская обл",
+    "Value": "9"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Брянская обл",
+    "Value": "10"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Бурятия Респ",
+    "Value": "11"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Владимирская обл",
+    "Value": "12"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Волгоградская обл",
+    "Value": "13"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Вологодская обл",
+    "Value": "14"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Воронежская обл",
+    "Value": "15"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Гагра г",
+    "Value": "700010"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Гал г",
+    "Value": "1000010"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Гудаута г",
+    "Value": "900010"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Гулрыпш г",
+    "Value": "904010"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Дагестан Респ",
+    "Value": "16"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Еврейская Аобл",
+    "Value": "17"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Забайкальский край",
+    "Value": "18"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Ивановская обл",
+    "Value": "19"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Ингушетия Респ",
+    "Value": "20"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Иркутская обл",
+    "Value": "21"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Кабардино-Балкарская Респ",
+    "Value": "22"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Калининград г.",
+    "Value": "1100010"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Калининградская обл",
+    "Value": "23"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Калмыкия Респ",
+    "Value": "24"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Калужская обл",
+    "Value": "25"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Камчатский край",
+    "Value": "26"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Карачаево-Черкесская Респ",
+    "Value": "27"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Карелия Респ",
+    "Value": "28"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Кемеровская обл",
+    "Value": "29"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Кировская обл",
+    "Value": "30"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Коми Респ",
+    "Value": "31"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Костромская обл",
+    "Value": "32"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Краснодарский край",
+    "Value": "33"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Красноярский край",
+    "Value": "34"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Крым Респ",
+    "Value": "35"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Курганская обл",
+    "Value": "36"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Курская обл",
+    "Value": "37"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Ленинградская обл",
+    "Value": "38"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Липецкая обл",
+    "Value": "39"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Магаданская обл",
+    "Value": "40"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Марий Эл Респ",
+    "Value": "41"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Мордовия Респ",
+    "Value": "42"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Москва г",
+    "Value": "85"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Московская обл",
+    "Value": "43"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Мурманская обл",
+    "Value": "44"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Ненецкий АО",
+    "Value": "45"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Нижегородская обл",
+    "Value": "46"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Новгородская обл",
+    "Value": "47"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Новосибирская обл",
+    "Value": "48"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Новый г",
+    "Value": "1008010"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Омская обл",
+    "Value": "49"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Оренбургская обл",
+    "Value": "50"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Орловская обл",
+    "Value": "51"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Очамчыра г",
+    "Value": "908010"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Пензенская обл",
+    "Value": "52"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Пермский край",
+    "Value": "53"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Приморский край",
+    "Value": "54"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Псковская обл",
+    "Value": "55"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Ростовская обл",
+    "Value": "56"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Рязанская обл",
+    "Value": "57"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Самарская обл",
+    "Value": "58"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Санкт-Петербург г",
+    "Value": "84"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Саратовская обл",
+    "Value": "59"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Саха /Якутия/ Респ",
+    "Value": "60"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Сахалинская обл",
+    "Value": "61"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Свердловская обл",
+    "Value": "62"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Севастополь г",
+    "Value": "87"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Северная Осетия - Алания Респ",
+    "Value": "63"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Смоленская обл",
+    "Value": "64"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Ставропольский край",
+    "Value": "65"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Сухум г",
+    "Value": "600010"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Тамбовская обл",
+    "Value": "66"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Татарстан Респ",
+    "Value": "67"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Тверская обл",
+    "Value": "68"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Ткуарчал г",
+    "Value": "1004010"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Томская обл",
+    "Value": "69"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Тульская обл",
+    "Value": "70"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Тыва Респ",
+    "Value": "71"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Тюменская обл",
+    "Value": "72"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Удмуртская Респ",
+    "Value": "73"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Ульяновская обл",
+    "Value": "74"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Хабаровский край",
+    "Value": "75"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Хакасия Респ",
+    "Value": "76"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Ханты-Мансийский Автономный округ - Югра АО",
+    "Value": "77"
+  },
+  {
+    "Disabled": false,
+    "Group": null,
+    "Selected": false,
+    "Text": "Челябинская обл",
+    "Value": "78"
+  }
+]
