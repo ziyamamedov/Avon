@@ -2,7 +2,16 @@
 .form__label{
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--horiz {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .form__label-title {
@@ -23,6 +32,7 @@
 
 .form__row-top {
   display: flex;
+  margin-bottom: 20px;
 }
 .form__row-bottom {
   display: flex;
@@ -40,5 +50,18 @@
   margin-right: 10px;
   &:last-child {
     margin-right: 0;
+  }
+}
+.form__input-checkbox {
+  margin-right: 10px;
+}
+
+.privacy-link {
+  &::after {
+    content: '*';
+    font-size: 13px;
+    color: red;
+    vertical-align: top;
+
   }
 }

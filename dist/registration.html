@@ -5,7 +5,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./main.css">
   <script src="./libs.min.js"></script>
-  <title>Регистрация в Oriflame</title>
+  <title>Регистрация в Avon</title>
+  <svg class="logo_gradient" style="width:0;height:0;position:absolute;" aria-hidden="true" focusable="false">
+    <linearGradient id="avon_logo_gradient">
+      <stop class="stop_one" offset="0%" stop-color="#7f28c4"></stop>
+      <stop class="stop_two" offset="100%" stop-color="red"></stop>
+    </linearGradient>
+    <linearGradient id="avon_logo_gradient_hover">
+      <stop class="stop_one" offset="0%" stop-color="red"></stop>
+      <stop class="stop_two" offset="100%" stop-color="#7f28c4"></stop>
+    </linearGradient>
+  </svg>
 </head>
 <body>
   <div class="wrapper">
@@ -13,7 +23,7 @@
       <div class="container">
         <div class="header__left"><a class="logo" href="./index.html">
             <svg class="logo__svg">
-              <use xlink:href="./images/icons/sprite.svg#ori_logo"></use>
+              <use xlink:href="./images/icons/sprite.svg#avon_logo"></use>
             </svg></a>
           <div class="header__title">&Scy;&acy;&jcy;&tcy; &ncy;&iecy;&zcy;&acy;&vcy;&icy;&scy;&icy;&mcy;&ocy;&gcy;&ocy; &kcy;&ocy;&ncy;&scy;&ucy;&lcy;&softcy;&tcy;&acy;&ncy;&tcy;&acy;</div>
         </div>
@@ -58,10 +68,10 @@
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item"><a class="nav__item-link" href="./index.html">Главная</a></li>
-              <li class="nav__item nav__item--active"><a class="nav__item-link" href="./registration.html">Регистрация в Oriflame</a></li>
+              <li class="nav__item nav__item--active"><a class="nav__item-link" href="./registration.html">Регистрация в Avon</a></li>
               <li class="nav__item"><a class="nav__item-link" href="#">Бизнес</a></li>
               <li class="nav__item"><a class="nav__item-link" href="#">Галерея</a></li>
-              <li class="nav__item"><a class="nav__item-link" href="./catalogue.html">Каталог Oriflame</a></li>
+              <li class="nav__item"><a class="nav__item-link" href="./catalogue.html">Каталог Avon</a></li>
               <li class="nav__item"><a class="nav__item-link" href="#">Контакты</a></li>
               <li class="nav__item"><a class="nav__item-link" href="#">Статьи</a></li>
             </ul>
@@ -89,8 +99,8 @@
           </div>
         </aside>
         <div class="maincontent">
-          <h1 class="title">Регистрация в Oriflame</h1>
-          <form class="reg-form" action="#">
+          <h1 class="title">Регистрация в Avon</h1>
+          <form class="reg-form" action="./php/reg-form.php">
             <div class="form__row-top">
               <div class="form__col-left">
                 <label class="form__label">
@@ -271,14 +281,14 @@
             </div>
             <div class="form__row-bottom">
               <div class="form__label-title form__label-title--not-req">Цель регистрации в компании</div>
-              <label class="form__label">
+              <label class="form__label form__label--horiz">
                 <input class="form__input-checkbox" type="checkbox" name="goal" value="dlyasebya"><span class="form__checkbox-title">Покупать косметику со скидкой</span>
               </label>
-              <label class="form__label">
+              <label class="form__label form__label--horiz">
                 <input class="form__input-checkbox" type="checkbox" name="goal" value="zarabotok"><span class="form__checkbox-title">Зарабатывать на продажах</span>
               </label>
-              <label class="form__label">
-                <input class="form__input-checkbox" type="checkbox" name="privacy-policy" value="yes"><span class="form__checkbox-title">Я ознакомлен (-а) с политикой о защите персональных данных (<a class="privacy-link" href="#">ознакомиться)</a></span>
+              <label class="form__label form__label--horiz">
+                <input class="form__input-checkbox" type="checkbox" name="privacy-policy" value="yes" required><span class="form__checkbox-title">Я ознакомлен (-а) с политикой о защите персональных данных (<a class="privacy-link" href="#">ознакомиться)</a></span>
               </label>
             </div>
             <input type="submit" value="Принять">
@@ -291,12 +301,12 @@
       <div class="container">
         <div class="footer__left">
           <div class="copyright">
-            <p>© 2020. Все права защищены.Сайт независимого консультанта Орифлейм При оформлении сайта частично использованы материалы официального сайта компании www.oriflame.ru</p>
+            <p>© 2020. Все права защищены.Сайт независимого координатора Avon При оформлении сайта частично использованы материалы официального сайта компании www.avon.ru</p>
           </div>
         </div>
         <div class="footer__right"><a class="logo" href="./index.html">
             <svg class="logo__svg">
-              <use xlink:href="./images/icons/sprite.svg#ori_logo"></use>
+              <use xlink:href="./images/icons/sprite.svg#avon_logo"></use>
             </svg></a>
           <div class="contacts">
             <div class="contacts__one">

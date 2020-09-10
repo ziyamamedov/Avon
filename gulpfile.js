@@ -20,8 +20,15 @@ const pug = require('gulp-pug');
 const toClean = [
   `${DIST_PATH}/*.html`,
   `${DIST_PATH}/*.css`,
-  `${DIST_PATH}/*.js`
+  `${DIST_PATH}/*.js`,
+  `${DIST_PATH}/php/*.php`
 ]
+
+task('copy-php', ()=> {
+  return src(`${SRC_PATH}/php/*.php`)
+    .pipe(dest(`${DIST_PATH}/php`))
+    .pipe(reload({stream: true}))
+})
 
 task('clean', ()=>{
   return src(toClean, { read: false }).pipe(rm())
@@ -87,8 +94,9 @@ task('watch', function(){
   watch(`${SRC_PATH}/scss/**/*.scss`, series('styles'));
   watch(`${SRC_PATH}/pug/**/*.pug`, series('pug'));
   watch(`${SRC_PATH}/scripts/*.js`, series('scripts')); 
+  watch(`${SRC_PATH}/php/*.php`, series('copy-php')); 
 })
 
 
-task('build', series('clean', parallel('pug', 'styles', 'js-libs', 'scripts')));
-task('default', series('clean', parallel('pug', 'styles', 'js-libs', 'scripts'), parallel('server', 'watch')));
+task('build', series('clean', parallel('pug', 'styles', 'js-libs', 'scripts', 'copy-php')));
+task('default', series('clean', parallel('pug', 'styles', 'js-libs', 'scripts', 'copy-php'), parallel('server', 'watch')));

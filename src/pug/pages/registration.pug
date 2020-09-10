@@ -1,16 +1,16 @@
 extends ../layout/layout.pug
 
 block title
-  title Регистрация в Oriflame
+  title Регистрация в Avon
 
 block nav
   +nav('nav', items, 2)
 
 block content
-  h1.title Регистрация в Oriflame
+  h1.title Регистрация в Avon
   
 
-  form.reg-form(action="#")
+  form.reg-form(action="./php/reg-form.php")
     
     .form__row-top
       .form__col-left
@@ -179,14 +179,14 @@ block content
       
     .form__row-bottom
       .form__label-title.form__label-title--not-req Цель регистрации в компании
-      label.form__label
+      label.form__label.form__label--horiz
         input.form__input-checkbox(type="checkbox", name="goal" value="dlyasebya")
         span.form__checkbox-title Покупать косметику со скидкой
-      label.form__label
+      label.form__label.form__label--horiz
         input.form__input-checkbox(type="checkbox", name="goal" value="zarabotok")
         span.form__checkbox-title Зарабатывать на продажах
-      label.form__label
-        input.form__input-checkbox(type="checkbox", name="privacy-policy" value="yes")
+      label.form__label.form__label--horiz
+        input.form__input-checkbox(type="checkbox", name="privacy-policy" value="yes" required)
         span.form__checkbox-title Я ознакомлен (-а) с политикой о защите персональных данных (
           a.privacy-link(href="#") ознакомиться)
 
