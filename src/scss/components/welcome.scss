@@ -4,3 +4,25 @@
     max-width: 100%;
   }
 }
+.welcome {
+
+  margin-bottom: 50px;
+
+}
+
+.welcome__content {
+  padding-left: 15px;
+}
+
+
+.advantages__item {
+  display: flex;
+  margin-bottom: 10px;
+  &--icon {
+    margin-right: 10px;
+  }
+}
+.check-svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}

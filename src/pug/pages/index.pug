@@ -4,11 +4,65 @@ block nav
   +nav('nav', items, 1)
 
 block content
-  .banner
+  section.banner
     img.banner__img(src="./images/banner.jpg", alt="Баннер на главной странице")
-  .welcome
+  section.welcome
     h1.welcome__title.title Стань представителем Avon!
     article.welcome__content
-      p Меня зовут Пронина Екатерина, я являюсь менеджером компании Avon.
+      p Зарегистрируйся в Эйвон и получи множество перимуществ по заказу косметики, а так же возможность зарабатывать деньги вместе с нами!
+  section.advantages
+    h2.title Почему Avon?
+    ul.advantages__list
+      li.advantages__item
+        .advantages__item--icon
+          svg.check-svg
+            use(xlink:href='./images/icons/sprite.svg#check')
+        .advantages__item--content  
+          h3.advantages__item--title Неограниченные возможности сотрудничества
+          p.advantages__item--text Управляй личным бьюти-бизнесом комфортно из дома
+      li.advantages__item
+        .advantages__item--icon
+          svg.check-svg
+            use(xlink:href='./images/icons/sprite.svg#check')
+        .advantages__item--content  
+          h3.advantages__item--title Эксклюзивные скидки и предложения для Вас и ваших клиентов
+          p.advantages__item--text До 40% скидки на косметическую продукцию
+      li.advantages__item
+        .advantages__item--icon
+          svg.check-svg
+            use(xlink:href='./images/icons/sprite.svg#check')
+        .advantages__item--content  
+          h3.advantages__item--title Полный возврат денежных средств
+          p.advantages__item--text Возврат в течение 90 дней
+      li.advantages__item
+        .advantages__item--icon
+          svg.check-svg
+            use(xlink:href='./images/icons/sprite.svg#check')
+        .advantages__item--content  
+          h3.advantages__item--title Специализированный обучающий центр Avon
+          p.advantages__item--text Бесплатные тренинги по бьюти-бизнесу
+  section.capabilities
+    h2.title Возможности представителя
+    ul.capabilities__list
+      li.capabilities__item
+        .capabilities__item--icon
+        .capabilities__item--text
+          p Размести свой первый заказ и получи скидку 30% и приз при выполнении условий 1го шага программы «Легкий Старт».
+      li.capabilities__item
+        .capabilities__item--icon
+        .capabilities__item--text
+          p Узнавай о бьюти-трендах, инновационных продуктах и новинках в мобильном приложении Skill Cup.
+      li.capabilities__item
+        .capabilities__item--icon
+        .capabilities__item--text
+          p Узнай больше о призовых наборах и как их получить, размещая заказы в программе «Легкий Старт
+      li.capabilities__item
+        .capabilities__item--icon
+        .capabilities__item--text
+          p Размести свой первый заказ и получи скидку 30% и приз при выполнении условий 1го шага программы «Легкий Старт».
+  
+  
+  a.button(href="./registration.html") Зарегистрироваться!
+      
       
 

@@ -17,6 +17,7 @@
   &__right {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 53%;
 
     @include desktop {

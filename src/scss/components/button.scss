@@ -1,0 +1,27 @@
+button {
+  border: none;
+  background: none;
+}
+
+.button {
+  border: 1px solid transparent;
+  background-color: $button-bg;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 20px;
+  color: white;
+
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  transition: background-color .2s, color .2s;
+
+  border-radius: 5px;
+  &:hover {
+    background-color: #fff;
+    color: $button-bg;
+    border-color: $button-bg;
+  }
+}
+
