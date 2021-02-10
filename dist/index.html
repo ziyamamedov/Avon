@@ -101,7 +101,7 @@
           <section class="welcome">
             <h1 class="welcome__title title">Стань представителем Avon!</h1>
             <article class="welcome__content">
-              <p>Зарегистрируйся в Эйвон и получи множество перимуществ по заказу косметики, а так же возможность зарабатывать деньги вместе с нами!</p>
+              <p> <a class="welcome__link" href="./registration.html">Зарегистрируйся </a><span>в Эйвон и получи множество перимуществ по заказу косметики, а так же возможность зарабатывать деньги вместе с нами!</span></p>
             </article>
           </section>
           <section class="advantages">
@@ -155,32 +155,55 @@
           </section>
           <section class="capabilities">
             <h2 class="title">Возможности представителя</h2>
-            <ul class="capabilities__list">
-              <li class="capabilities__item">
-                <div class="capabilities__item--icon"></div>
-                <div class="capabilities__item--text">
-                  <p>Размести свой первый заказ и получи скидку 30% и приз при выполнении условий 1го шага программы «Легкий Старт».</p>
-                </div>
-              </li>
-              <li class="capabilities__item">
-                <div class="capabilities__item--icon"></div>
-                <div class="capabilities__item--text">
-                  <p>Узнавай о бьюти-трендах, инновационных продуктах и новинках в мобильном приложении Skill Cup.</p>
-                </div>
-              </li>
-              <li class="capabilities__item">
-                <div class="capabilities__item--icon"></div>
-                <div class="capabilities__item--text">
-                  <p>Узнай больше о призовых наборах и как их получить, размещая заказы в программе «Легкий Старт</p>
-                </div>
-              </li>
-              <li class="capabilities__item">
-                <div class="capabilities__item--icon"></div>
-                <div class="capabilities__item--text">
-                  <p>Размести свой первый заказ и получи скидку 30% и приз при выполнении условий 1го шага программы «Легкий Старт».</p>
-                </div>
-              </li>
-            </ul>
+            <div class="capabilities__slider">
+              <div class="swiper-button-prev" id="prevbtn"></div>
+              <div class="swiper-container">
+                <ul class="capabilities__list swiper-wrapper">
+                  <li class="capabilities__item swiper-slide">
+                    <div class="capabilities__item--icon">
+                      <svg class="capabilities__item-svg">
+                        <use xlink:href="./images/icons/sprite.svg#clsBtn"></use>
+                      </svg>
+                    </div>
+                    <div class="capabilities__item--text">
+                      <p>Размести свой первый заказ и получи скидку 30% и приз при выполнении условий 1го шага программы «Легкий Старт».</p>
+                    </div>
+                  </li>
+                  <li class="capabilities__item swiper-slide">
+                    <div class="capabilities__item--icon">
+                      <svg class="capabilities__item-svg">
+                        <use xlink:href="./images/icons/sprite.svg#clsBtn"></use>
+                      </svg>
+                    </div>
+                    <div class="capabilities__item--text">
+                      <p>Узнавай о бьюти-трендах, инновационных продуктах и новинках в мобильном приложении Skill Cup.</p>
+                    </div>
+                  </li>
+                  <li class="capabilities__item swiper-slide">
+                    <div class="capabilities__item--icon">
+                      <svg class="capabilities__item-svg">
+                        <use xlink:href="./images/icons/sprite.svg#clsBtn"></use>
+                      </svg>
+                    </div>
+                    <div class="capabilities__item--text">
+                      <p>Узнай больше о призовых наборах и как их получить, размещая заказы в программе «Легкий Старт</p>
+                    </div>
+                  </li>
+                  <li class="capabilities__item swiper-slide">
+                    <div class="capabilities__item--icon">
+                      <svg class="capabilities__item-svg">
+                        <use xlink:href="./images/icons/sprite.svg#clsBtn"></use>
+                      </svg>
+                    </div>
+                    <div class="capabilities__item--text">
+                      <p>Размести свой первый заказ и получи скидку 30% и приз при выполнении условий 1го шага программы «Легкий Старт».</p>
+                    </div>
+                  </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="swiper-button-next" id="nextBtn"></div>
+            </div>
           </section><a class="button" href="./registration.html">Зарегистрироваться!</a>
         </div>
       </div>

@@ -9,7 +9,9 @@ block content
   section.welcome
     h1.welcome__title.title Стань представителем Avon!
     article.welcome__content
-      p Зарегистрируйся в Эйвон и получи множество перимуществ по заказу косметики, а так же возможность зарабатывать деньги вместе с нами!
+      p 
+        a.welcome__link(href="./registration.html") Зарегистрируйся 
+        span в Эйвон и получи множество перимуществ по заказу косметики, а так же возможность зарабатывать деньги вместе с нами!
   section.advantages
     h2.title Почему Avon?
     ul.advantages__list
@@ -43,25 +45,38 @@ block content
           p.advantages__item--text Бесплатные тренинги по бьюти-бизнесу
   section.capabilities
     h2.title Возможности представителя
-    ul.capabilities__list
-      li.capabilities__item
-        .capabilities__item--icon
-        .capabilities__item--text
-          p Размести свой первый заказ и получи скидку 30% и приз при выполнении условий 1го шага программы «Легкий Старт».
-      li.capabilities__item
-        .capabilities__item--icon
-        .capabilities__item--text
-          p Узнавай о бьюти-трендах, инновационных продуктах и новинках в мобильном приложении Skill Cup.
-      li.capabilities__item
-        .capabilities__item--icon
-        .capabilities__item--text
-          p Узнай больше о призовых наборах и как их получить, размещая заказы в программе «Легкий Старт
-      li.capabilities__item
-        .capabilities__item--icon
-        .capabilities__item--text
-          p Размести свой первый заказ и получи скидку 30% и приз при выполнении условий 1го шага программы «Легкий Старт».
-  
-  
+    
+    .capabilities__slider
+      .swiper-button-prev#prevbtn
+      .swiper-container
+        ul.capabilities__list.swiper-wrapper
+          li.capabilities__item.swiper-slide
+            .capabilities__item--icon
+              svg.capabilities__item-svg
+                  use(xlink:href='./images/icons/sprite.svg#clsBtn')
+            .capabilities__item--text
+              p Размести свой первый заказ и получи скидку 30% и приз при выполнении условий 1го шага программы «Легкий Старт».
+          li.capabilities__item.swiper-slide
+            .capabilities__item--icon
+              svg.capabilities__item-svg
+                    use(xlink:href='./images/icons/sprite.svg#clsBtn')
+            .capabilities__item--text
+              p Узнавай о бьюти-трендах, инновационных продуктах и новинках в мобильном приложении Skill Cup.
+          li.capabilities__item.swiper-slide
+            .capabilities__item--icon
+              svg.capabilities__item-svg
+                  use(xlink:href='./images/icons/sprite.svg#clsBtn')
+            .capabilities__item--text
+              p Узнай больше о призовых наборах и как их получить, размещая заказы в программе «Легкий Старт
+          li.capabilities__item.swiper-slide
+            .capabilities__item--icon
+              svg.capabilities__item-svg
+                  use(xlink:href='./images/icons/sprite.svg#clsBtn')
+            .capabilities__item--text
+              p Размести свой первый заказ и получи скидку 30% и приз при выполнении условий 1го шага программы «Легкий Старт».
+        .swiper-pagination
+      .swiper-button-next#nextBtn
+
   a.button(href="./registration.html") Зарегистрироваться!
       
       
