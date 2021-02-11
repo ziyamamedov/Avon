@@ -63,5 +63,15 @@
   <symbol id="check" viewBox="0 0 24 24">
     <path fill="#5973b1" fill-rule="evenodd" d="M12 .181c6.627 0 12 5.3 12 11.84 0 6.538-5.373 11.839-12 11.839S0 18.56 0 12.02C0 5.483 5.373.182 12 .182zm5.47 6.877l-7.72 7.616-2.47-2.437-1.06 1.047 3.53 3.483 8.78-8.663-1.06-1.046z"></path>
   </symbol>
+  
+  <symbol id="svg-icon-next" viewBox="0 0 24 24">
+		<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+	</symbol>
+
+  <symbol id="svg-icon-previous" viewBox="0 0 24 24">
+		<path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path>
+	</symbol>
+
+  
 
 </svg>

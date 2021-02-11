@@ -1,0 +1,49 @@
+.catalogues__list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: center;
+}
+
+.catalogue__item {
+  margin-right: 20px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.catalogue__item-img {
+  max-width: 200px;
+  border: 1px solid rgba($color: #000000, $alpha: 0.2);
+  padding: 10px;
+}
+
+.catalogue__item-title {
+  text-align: center;
+}
+
+
+///Стилизация слайдера каталога
+.catalogues__slider  {
+  display: flex;
+  align-items: center; 
+}
+.catalogues__slider-prev-btn, .catalogues__slider-next-btn {
+  cursor: pointer;
+}
+.catalogues__slider-nav-btn-svg {
+  width: 45px;
+  height: 75px; 
+}
+.swiper-container_cat { 
+  overflow: hidden;
+}
+.catalogues__slider-item {
+  display: flex;
+}
+.catalogue__slider-item-col {
+  max-width: 50%;
+}
+
+.catalogue__slider-item-img {
+  max-width: 100%;
+}

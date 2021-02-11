@@ -7,6 +7,50 @@ block nav
   +nav('nav', items, 5)
 
 block content
-  h1 Каталог
+  
+  .catalogues
+    h1.title Каталог
 
+    ul.catalogues__list
+      li.catalogue__item
+        a(href="#").catalogue__item-btn 
+          img.catalogue__item-img(src="./images/catalogue/02_2021/Core_DD_week_2-0.jpg", alt="Каталог 2 2021") 
+        h3.catalogue__item-title Каталог 2-2021
+      li.catalogue__item
+        a(href="#").catalogue__item-btn 
+          img.catalogue__item-img(src="./images/catalogue/02_2021/Core_DD_week_2-0.jpg", alt="Каталог 2 2021") 
+        h3.catalogue__item-title Каталог 2-2021
+      li.catalogue__item
+        a(href="#").catalogue__item-btn 
+          img.catalogue__item-img(src="./images/catalogue/02_2021/Core_DD_week_2-0.jpg", alt="Каталог 2 2021") 
+        h3.catalogue__item-title Каталог 2-2021
+    
+    .catalogues__slider 
+      
+      .catalogues__slider-prev-btn
+        svg.catalogues__slider-nav-btn-svg
+            use(xlink:href='./images/icons/sprite.svg#svg-icon-previous')
+      
+      .swiper-container_cat
+        ul.catalogues__slider-list.swiper-wrapper
+          li.catalogues__slider-item.swiper-slide
+            .catalogues__slider-item-col
+              img.catalogue__slider-item-img(src="./images/catalogue/02_2021/Core_DD_week_2-00.jpg", alt="Каталог 2 2021") 
+            .catalogues__slider-item-col
+              img.catalogue__slider-item-img(src="./images/catalogue/02_2021/Core_DD_week_2-0.jpg", alt="Каталог 2 2021") 
+          li.catalogues__slider-item.swiper-slide
+            .catalogues__slider-item-col
+              img.catalogue__slider-item-img(src="./images/catalogue/02_2021/Core_DD_week_2-1.jpg", alt="Каталог 2 2021") 
+            .catalogues__slider-item-col
+              img.catalogue__slider-item-img(src="./images/catalogue/02_2021/Core_DD_week_2-2.jpg", alt="Каталог 2 2021") 
+          li.catalogues__slider-item.swiper-slide
+            .catalogues__slider-item-col
+              img.catalogue__slider-item-img(src="./images/catalogue/02_2021/Core_DD_week_2-3.jpg", alt="Каталог 2 2021") 
+            .catalogues__slider-item-col
+              img.catalogue__slider-item-img(src="./images/catalogue/02_2021/Core_DD_week_2-4.jpg", alt="Каталог 2 2021") 
+      
+      .catalogues__slider-next-btn
+        svg.catalogues__slider-nav-btn-svg
+            use(xlink:href='./images/icons/sprite.svg#svg-icon-next')
+  
   
