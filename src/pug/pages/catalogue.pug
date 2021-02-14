@@ -13,44 +13,54 @@ block content
 
     ul.catalogues__list
       li.catalogue__item
-        a(href="#").catalogue__item-btn 
-          img.catalogue__item-img(src="./images/catalogue/02_2021/Core_DD_week_2-0.jpg", alt="Каталог 2 2021") 
+        a(href="#").catalogue__item-btn#cat-btn
+          img.catalogue__item-img(src="./images/catalogue/02_2021/1.jpg", alt="Каталог 2 2021") 
         h3.catalogue__item-title Каталог 2-2021
       li.catalogue__item
         a(href="#").catalogue__item-btn 
-          img.catalogue__item-img(src="./images/catalogue/02_2021/Core_DD_week_2-0.jpg", alt="Каталог 2 2021") 
+          img.catalogue__item-img(src="./images/catalogue/02_2021/1.jpg", alt="Каталог 2 2021") 
         h3.catalogue__item-title Каталог 2-2021
       li.catalogue__item
         a(href="#").catalogue__item-btn 
-          img.catalogue__item-img(src="./images/catalogue/02_2021/Core_DD_week_2-0.jpg", alt="Каталог 2 2021") 
+          img.catalogue__item-img(src="./images/catalogue/02_2021/1.jpg", alt="Каталог 2 2021") 
         h3.catalogue__item-title Каталог 2-2021
     
     .catalogues__slider 
       
-      .catalogues__slider-prev-btn
-        svg.catalogues__slider-nav-btn-svg
-            use(xlink:href='./images/icons/sprite.svg#svg-icon-previous')
+      .catalogue__slider-buttons
+
+        .catalogues__slider-first-btn
+          svg.catalogues__slider-nav-btn-svg
+            use(xlink:href='./images/icons/sprite.svg#arrow-first')
+      
+        .catalogues__slider-prev-btn
+          svg.catalogues__slider-nav-btn-svg
+            use(xlink:href='./images/icons/sprite.svg#arrow-previous')
       
       .swiper-container_cat
-        ul.catalogues__slider-list.swiper-wrapper
-          li.catalogues__slider-item.swiper-slide
-            .catalogues__slider-item-col
-              img.catalogue__slider-item-img(src="./images/catalogue/02_2021/Core_DD_week_2-00.jpg", alt="Каталог 2 2021") 
-            .catalogues__slider-item-col
-              img.catalogue__slider-item-img(src="./images/catalogue/02_2021/Core_DD_week_2-0.jpg", alt="Каталог 2 2021") 
-          li.catalogues__slider-item.swiper-slide
-            .catalogues__slider-item-col
-              img.catalogue__slider-item-img(src="./images/catalogue/02_2021/Core_DD_week_2-1.jpg", alt="Каталог 2 2021") 
-            .catalogues__slider-item-col
-              img.catalogue__slider-item-img(src="./images/catalogue/02_2021/Core_DD_week_2-2.jpg", alt="Каталог 2 2021") 
-          li.catalogues__slider-item.swiper-slide
-            .catalogues__slider-item-col
-              img.catalogue__slider-item-img(src="./images/catalogue/02_2021/Core_DD_week_2-3.jpg", alt="Каталог 2 2021") 
-            .catalogues__slider-item-col
-              img.catalogue__slider-item-img(src="./images/catalogue/02_2021/Core_DD_week_2-4.jpg", alt="Каталог 2 2021") 
+        ul.catalogues__slider-list.swiper-wrapper#catalogueSliderList
+          //- li.catalogues__slider-item.swiper-slide
+          //-   .catalogues__slider-item-col
+          //-     img.catalogue__slider-item-img(src="./images/catalogue/02_2021/p (0).jpg", alt="Каталог 2 2021") 
+          //-   .catalogues__slider-item-col
+          //-     img.catalogue__slider-item-img(src="./images/catalogue/02_2021/p (1).jpg", alt="Каталог 2 2021") 
+          //- li.catalogues__slider-item.swiper-slide
+          //-   .catalogues__slider-item-col
+          //-     img.catalogue__slider-item-img(src="./images/catalogue/02_2021/Core_DD_week_2-1.jpg", alt="Каталог 2 2021") 
+          //-   .catalogues__slider-item-col
+          //-     img.catalogue__slider-item-img(src="./images/catalogue/02_2021/Core_DD_week_2-2.jpg", alt="Каталог 2 2021") 
+          //- li.catalogues__slider-item.swiper-slide
+          //-   .catalogues__slider-item-col
+          //-     img.catalogue__slider-item-img(src="./images/catalogue/02_2021/Core_DD_week_2-3.jpg", alt="Каталог 2 2021") 
+          //-   .catalogues__slider-item-col
+          //-     img.catalogue__slider-item-img(src="./images/catalogue/02_2021/Core_DD_week_2-4.jpg", alt="Каталог 2 2021") 
       
-      .catalogues__slider-next-btn
-        svg.catalogues__slider-nav-btn-svg
-            use(xlink:href='./images/icons/sprite.svg#svg-icon-next')
+      .catalogue__slider-buttons
+        .catalogue__slider-last-btn 
+          svg.catalogues__slider-nav-btn-svg
+              use(xlink:href='./images/icons/sprite.svg#arrow-last')
+        .catalogues__slider-next-btn
+          svg.catalogues__slider-nav-btn-svg
+              use(xlink:href='./images/icons/sprite.svg#arrow-next')
   
   

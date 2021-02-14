@@ -25,19 +25,26 @@
 ///Стилизация слайдера каталога
 .catalogues__slider  {
   display: flex;
-  align-items: center; 
 }
-.catalogues__slider-prev-btn, .catalogues__slider-next-btn {
-  cursor: pointer;
+
+.catalogue__slider-buttons {
+  display: flex;
+  flex-direction: column;
 }
+
 .catalogues__slider-nav-btn-svg {
+  cursor: pointer;
   width: 45px;
   height: 75px; 
 }
+.catalogues__slider-first-btn, .catalogues__slider-last-btn {
+  
+}
+
 .swiper-container_cat { 
   overflow: hidden;
 }
-.catalogues__slider-item {
+.swiper-slide {
   display: flex;
 }
 .catalogue__slider-item-col {
