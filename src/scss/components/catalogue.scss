@@ -23,26 +23,60 @@
 
 
 ///Стилизация слайдера каталога
-.catalogues__slider  {
+
+//Стилизация дисплея номера активного слайда
+.catalogue__slider-header {
   display: flex;
+  justify-content: center;
+  margin-bottom: 20px; 
 }
 
-.catalogue__slider-buttons {
+.catalogue__slider-diplay-input {
+  border: none; 
+  width: 200px;
+  text-align: center;
+  padding: 20px;
+  outline: none;
+  background-color: white;
+  font-weight: bold;
+
+  transition: background-color 0.5s;
+  &:focus {
+    color: white;
+    background-color: rgb(90, 87, 87);
+  }
+  
+}
+
+
+.catalogues__slider  {
   display: flex;
   flex-direction: column;
 }
+.catalogue__slider-body {
+  display: flex;
+}
+.catalogue__slider-buttons {
+  display: grid;
+  grid-template-rows: calc(100%/3) calc(100%/3) calc(100%/3); 
+  grid-template-columns: 100%; 
+}
 
 .catalogues__slider-nav-btn-svg {
-  cursor: pointer;
-  width: 45px;
-  height: 75px; 
+  
+  width: 30px;
+  height: 50px;  
 }
 .catalogues__slider-first-btn, .catalogues__slider-last-btn {
-  
+}
+.catalogue__slider-buttons-row-middle {
+  display: flex;
+  align-items: center;
 }
 
 .swiper-container_cat { 
   overflow: hidden;
+  margin: 0 10px; 
 }
 .swiper-slide {
   display: flex;
