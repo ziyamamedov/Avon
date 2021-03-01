@@ -1,3 +1,7 @@
+
+.catalogues {
+}
+
 .catalogues__list {
   display: flex;
   flex-wrap: wrap;
@@ -25,10 +29,39 @@
 ///Стилизация слайдера каталога
 
 //Стилизация дисплея номера активного слайда
-.catalogue__slider-header {
+.catalogues__slider-wrapper {
   display: flex;
-  justify-content: center;
-  margin-bottom: 20px; 
+    align-items: center;
+    justify-content: center;
+    background-color: rgba($color: #000000, $alpha: .8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%; 
+    z-index: 10;
+}
+.catalogues__slider  {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+
+  width: 45%;
+  min-width: 720px;
+  padding: 20px;
+
+  @include tablets {
+    width: 90%;
+    min-width: 470px;
+  }
+  @include phones {
+    width: 95%;
+    min-width: initial;
+  }
+
 }
 
 .catalogue__slider-diplay-input {
@@ -47,14 +80,32 @@
   }
   
 }
-
-
-.catalogues__slider  {
+.catalogue__slider-cls-btn {
+  display: block;
+}
+.catalogue__slider-header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  .logo {
+    width: 9.5rem;
+  }
 }
 .catalogue__slider-body {
   display: flex;
+}
+.catalogue__slider-footer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  left: 0;
+  z-index: 20;
+  background-color: rgb(255, 255, 255);
+  height: 18%;
+  width: 100%;
+  padding-top: 3%;
+    
 }
 .catalogue__slider-buttons {
   display: grid;
@@ -68,6 +119,7 @@
   height: 50px;  
 }
 .catalogues__slider-first-btn, .catalogues__slider-last-btn {
+  
 }
 .catalogue__slider-buttons-row-middle {
   display: flex;
@@ -77,12 +129,18 @@
 .swiper-container_cat { 
   overflow: hidden;
   margin: 0 10px; 
+  max-width: 100%;
+  box-shadow: 0 0 25px rgba(0,0,0,0.5);
+  position: relative;
+
 }
+
 .swiper-slide {
   display: flex;
+  max-width: 100%;
 }
-.catalogue__slider-item-col {
-  max-width: 50%;
+.catalogues__slider-item-col {
+  width: 50%;
 }
 
 .catalogue__slider-item-img {

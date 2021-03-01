@@ -69,8 +69,8 @@ task('js-libs', () => {
 })
 
 
-task('scripts', () => {
-  return src('./src/scripts/*.js')
+task('mainScripts', () => {
+  return src('./src/scripts/main/*.js')
   .pipe(gulpif(env === 'dev', sourcemaps.init()))
   .pipe(concat('main.min.js'))
   .pipe(babel({
@@ -79,6 +79,17 @@ task('scripts', () => {
   .pipe(gulpif(env === 'prod', uglify()))
   .pipe(gulpif(env === 'dev', sourcemaps.write()))
   .pipe(dest(DIST_PATH))
+  .pipe(reload({stream:true}));
+})
+task('subScripts', () => {
+  return src('./src/scripts/components/*.js')
+  .pipe(gulpif(env === 'dev', sourcemaps.init()))
+  .pipe(babel({
+    presets: ['@babel/env']
+  }))
+  .pipe(gulpif(env === 'prod', uglify()))
+  .pipe(gulpif(env === 'dev', sourcemaps.write()))
+  .pipe(dest(`${DIST_PATH}/sub-scripts`))
   .pipe(reload({stream:true}));
 })
 
@@ -93,10 +104,11 @@ task('server', () => {
 task('watch', function(){
   watch(`${SRC_PATH}/scss/**/*.scss`, series('styles'));
   watch(`${SRC_PATH}/pug/**/*.pug`, series('pug'));
-  watch(`${SRC_PATH}/scripts/*.js`, series('scripts')); 
+  watch(`${SRC_PATH}/scripts/main/*.js`, series('mainScripts')); 
+  watch(`${SRC_PATH}/scripts/components/*.js`, series('subScripts')); 
   watch(`${SRC_PATH}/php/*.php`, series('copy-php')); 
 })
 
 
-task('build', series('clean', parallel('pug', 'styles', 'js-libs', 'scripts', 'copy-php')));
-task('default', series('clean', parallel('pug', 'styles', 'js-libs', 'scripts', 'copy-php'), parallel('server', 'watch')));
+task('build', series('clean', parallel('pug', 'styles', 'js-libs', 'mainScripts', 'subScripts', 'copy-php')));
+task('default', series('clean', parallel('pug', 'styles', 'js-libs', 'mainScripts', 'subScripts', 'copy-php'), parallel('server', 'watch')));

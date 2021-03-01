@@ -1,7 +1,7 @@
 extends ../layout/layout.pug
 
 block title
-  title Каталог Oriflame
+  title Каталог Avon
 
 block nav
   +nav('nav', items, 5)
@@ -9,55 +9,14 @@ block nav
 block content
   
   .catalogues
-    h1.title Каталог
+    h1.title Выберите каталог для просмотра
 
     ul.catalogues__list
-      li.catalogue__item
-        a(href="#").catalogue__item-btn#cat-btn
-          img.catalogue__item-img(src="./images/catalogue/01_2021/1.jpg", alt="Каталог 2 2021") 
-        h3.catalogue__item-title Каталог 2-2021
-      li.catalogue__item
-        a(href="#").catalogue__item-btn 
-          img.catalogue__item-img(src="./images/catalogue/01_2021/1.jpg", alt="Каталог 2 2021") 
-        h3.catalogue__item-title Каталог 2-2021
-      li.catalogue__item
-        a(href="#").catalogue__item-btn 
-          img.catalogue__item-img(src="./images/catalogue/01_2021/1.jpg", alt="Каталог 2 2021") 
-        h3.catalogue__item-title Каталог 2-2021
     
-     
-      
-    .catalogues__slider 
-      .catalogue__slider-header 
-        .catalogue__slider-display
-          input.catalogue__slider-diplay-input(type="text", name="input-slide-page", value= '1 / 358')
-      .catalogue__slider-body
 
-        .catalogue__slider-buttons
-          .catalogue__slider-buttons-row-top
-            a(href='#').catalogues__slider-first-btn
-              svg.catalogues__slider-nav-btn-svg
-                use(xlink:href='./images/icons/sprite.svg#arrow-first')
           
-          .catalogue__slider-buttons-row-middle
-            a(href='#').catalogues__slider-prev-btn
-              svg.catalogues__slider-nav-btn-svg
-                use(xlink:href='./images/icons/sprite.svg#arrow-previous')
         
-        .swiper-container_cat
-          ul.catalogues__slider-list.swiper-wrapper#catalogueSliderList
-            //- li.catalogues__slider-item.swiper-slide
-            //-   .catalogues__slider-item-col
-            //-     img.catalogue__slider-item-img(src="./images/catalogue/02_2021/125.jpg", alt="Каталог 2 2021") 
+        
 
-        .catalogue__slider-buttons
-          .catalogue__slider-buttons-row-top
-            a(href='#').catalogue__slider-last-btn 
-              svg.catalogues__slider-nav-btn-svg
-                  use(xlink:href='./images/icons/sprite.svg#arrow-last')
-          .catalogue__slider-buttons-row-middle
-            a(href='#').catalogues__slider-next-btn
-              svg.catalogues__slider-nav-btn-svg
-                  use(xlink:href='./images/icons/sprite.svg#arrow-next')
-    
-    
+block subScripts
+  script(src='./sub-scripts/catalogue.js')
