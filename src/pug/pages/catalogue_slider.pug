@@ -17,18 +17,6 @@ block content
             svg.clsbtn-svg
               use(xlink:href='./images/icons/sprite.svg#clsBtn')
       .catalogue__slider-body
-
-        .catalogue__slider-buttons
-          .catalogue__slider-buttons-row-top
-            a(href='#').catalogues__slider-first-btn
-              svg.catalogues__slider-nav-btn-svg
-                use(xlink:href='./images/icons/sprite.svg#arrow-first')
-          
-          .catalogue__slider-buttons-row-middle
-            a(href='#').catalogues__slider-prev-btn
-              svg.catalogues__slider-nav-btn-svg
-                use(xlink:href='./images/icons/sprite.svg#arrow-previous')
-        
         .swiper-container_cat
           ul.catalogues__slider-list.swiper-wrapper#catalogueSliderList
             //- li.catalogues__slider-item.swiper-slide
@@ -37,21 +25,23 @@ block content
             //- li.catalogues__slider-item.swiper-slide
             //-   .catalogues__slider-item-col
             //-     img.catalogue__slider-item-img(src="./images/catalogue/Core_DD_week_4/Core_DD_week_4_2.jpg", alt="Каталог 2 2021") 
-          .catalogue__slider-footer
-            
-            .catalogue__slider-display
-              input.catalogue__slider-diplay-input(type="text", name="input-slide-page", value= '/')
-        
-        .catalogue__slider-buttons
-          .catalogue__slider-buttons-row-top
-            a(href='#').catalogue__slider-last-btn 
-              svg.catalogues__slider-nav-btn-svg
-                  use(xlink:href='./images/icons/sprite.svg#arrow-last')
-          .catalogue__slider-buttons-row-middle
-            a(href='#').catalogues__slider-next-btn
-              svg.catalogues__slider-nav-btn-svg
+        .catalogue__slider-footer
+          .catalogue__slider-buttons
+            a(href='#').catalogue__slider-first-btn
+              svg.catalogue__slider-nav-btn-svg
+                use(xlink:href='./images/icons/sprite.svg#arrow-first')
+            a(href='#').catalogue__slider-prev-btn
+              svg.catalogue__slider-nav-btn-svg
+                use(xlink:href='./images/icons/sprite.svg#arrow-previous')
+          .catalogue__slider-display
+            input.catalogue__slider-diplay-input(type="text", name="input-slide-page", value= '/')
+          .catalogue__slider-buttons
+            a(href='#').catalogue__slider-next-btn
+              svg.catalogue__slider-nav-btn-svg
                   use(xlink:href='./images/icons/sprite.svg#arrow-next')
-
+            a(href='#').catalogue__slider-last-btn 
+              svg.catalogue__slider-nav-btn-svg
+                  use(xlink:href='./images/icons/sprite.svg#arrow-last')
 
 
 block subScripts
