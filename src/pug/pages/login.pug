@@ -1,0 +1,21 @@
+extends ../layout/layout.pug
+
+block nav
+  +nav('nav', items, 1)
+
+block content
+  h1.title Кабинет администратора
+  
+  .admin__login
+    form(action="./php/admin.php" method="POST") 
+      label.form__label
+        .form__label-title Логин
+        input.form__input-text(type="text", name="admin_login" required)
+      label.form__label
+        .form__label-title Пароль
+        input.form__input-text(type="password", name="admin_password" required)
+      .admin__login-btns
+        input.button(type="submit", value="Принять")
+        input.button(type="reset", value="Cброс")
+  .admin__content  
+    

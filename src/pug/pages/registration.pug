@@ -10,33 +10,36 @@ block content
   h1.title Регистрация в Avon
   
 
-  form.reg-form(action="./php/reg-form.php")
+  form.reg-form(action="./php/reg-form.php" method="POST")
     
     .form__row-top
       .form__col-left
         label.form__label
           .form__label-title Фамилия
-          input.form__input-text(type="text", name="sername" required)
+          input.form__input-text(type="text", name="surname" required)
         label.form__label
           .form__label-title Имя Отчество
           input.form__input-text(type="text", name="name" required)
+        label.form__label
+          .form__label-title Телефон
+          input.form__input-text(type="number", name="phone" required)
         label.form__label
           .form__label-title Email
           input.form__input-text(type="email", name="email" required)
         label.form__label.form__label
           .form__label-title Дата рождения
           .form__label-row
-            select.form__select-date(name="day" required)
+            select.form__select-date(name="birth_day" required)
               option.form__select-option(disabled selected) День
-              option.form__select-option(value="1") 1
-              option.form__select-option(value="2") 2
-              option.form__select-option(value="3") 3
-              option.form__select-option(value="4") 4
-              option.form__select-option(value="5") 5
-              option.form__select-option(value="6") 6
-              option.form__select-option(value="7") 7
-              option.form__select-option(value="8") 8
-              option.form__select-option(value="9") 9
+              option.form__select-option(value="01") 1
+              option.form__select-option(value="02") 2
+              option.form__select-option(value="03") 3
+              option.form__select-option(value="04") 4
+              option.form__select-option(value="05") 5
+              option.form__select-option(value="06") 6
+              option.form__select-option(value="07") 7
+              option.form__select-option(value="08") 8
+              option.form__select-option(value="09") 9
               option.form__select-option(value="10") 10
               option.form__select-option(value="11") 11
               option.form__select-option(value="12") 12
@@ -59,21 +62,21 @@ block content
               option.form__select-option(value="29") 29
               option.form__select-option(value="30") 30
               option.form__select-option(value="31") 31
-            select.form__select-date(name="month" required)
+            select.form__select-date(name="birth_month" required)
               option.form__select-option(disabled selected) Месяц
-              option.form__select-option(value="1") Январь
-              option.form__select-option(value="2") Февраль
-              option.form__select-option(value="3") Март
-              option.form__select-option(value="4") Апрель
-              option.form__select-option(value="5") Май
-              option.form__select-option(value="6") Июнь
-              option.form__select-option(value="7") Июль
-              option.form__select-option(value="8") Август
-              option.form__select-option(value="9") Сентябрь
+              option.form__select-option(value="02") Февраль
+              option.form__select-option(value="01") Январь
+              option.form__select-option(value="03") Март
+              option.form__select-option(value="04") Апрель
+              option.form__select-option(value="05") Май
+              option.form__select-option(value="06") Июнь
+              option.form__select-option(value="07") Июль
+              option.form__select-option(value="08") Август
+              option.form__select-option(value="09") Сентябрь
               option.form__select-option(value="10") Октябрь
               option.form__select-option(value="11") Ноябрь
               option.form__select-option(value="12") Декабрь
-            select.form__select-date(name="year" required)
+            select.form__select-date(name="birth_year" required)
               option.form__select-option(disabled selected) Год
               option.form__select-option(value="1920") 1920
               option.form__select-option(value="1921") 1921
@@ -177,21 +180,22 @@ block content
           .form__label-title Улица / дом
           input.form__input-text#street(type="text", name="street" required)
       
-    .form__row-bottom
+    .form__row-middle
       .form__label-title.form__label-title--not-req Цель регистрации в компании
       label.form__label.form__label--horiz
-        input.form__input-checkbox(type="checkbox", name="goal" value="dlyasebya")
+        input.form__input-checkbox(type="checkbox", name="reg_purpose" value="dlyasebya")
         span.form__checkbox-title Покупать косметику со скидкой
       label.form__label.form__label--horiz
-        input.form__input-checkbox(type="checkbox", name="goal" value="zarabotok")
+        input.form__input-checkbox(type="checkbox", name="reg_purpose" value="zarabotok")
         span.form__checkbox-title Зарабатывать на продажах
       label.form__label.form__label--horiz
         input.form__input-checkbox(type="checkbox", name="privacy-policy" value="yes" required)
         span.form__checkbox-title Я ознакомлен (-а) с политикой о защите персональных данных (
           a.privacy-link(href="#") ознакомиться)
-  
-    input.button(type="submit", value="Принять")
-    input.button(type="reset", value="Cброс")
+
+    .form__row-bottom
+      input.button(type="submit", value="Принять")
+      input.button(type="reset", value="Cброс")
 
 
 

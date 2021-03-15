@@ -34,13 +34,27 @@
   display: flex;
   margin-bottom: 20px;
 }
-.form__row-bottom {
+.form__row-middle {
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
 }
+.form__row-bottom {
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+
 
 .form__col-left {
   margin-right: 50px;
+  @include tablets {
+    margin-right: 35px;
+  }
+  @include phones {
+    margin-right: 20px;
+  }
 }
 .form__col-right {
   flex: 1;
@@ -54,6 +68,9 @@
 }
 .form__input-checkbox {
   margin-right: 10px;
+  @include phones{
+    margin-right: 5px;
+  }
 }
 
 .privacy-link {

@@ -5,7 +5,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./main.css">
   <script src="./libs.min.js"></script>
-  <title>Каталог Avon</title>
+  <title>Avon | Сайт Координатора Прониной Екатерины</title>
   <svg class="logo_gradient" style="width:0;height:0;position:absolute;" aria-hidden="true" focusable="false">
     <linearGradient id="avon_logo_gradient">
       <stop class="stop_one" offset="0%" stop-color="#7f28c4"></stop>
@@ -65,11 +65,11 @@
           </div>
           <nav class="nav">
             <ul class="nav__list">
-              <li class="nav__item"><a class="nav__item-link" href="./index.html">Главная</a></li>
+              <li class="nav__item nav__item--active"><a class="nav__item-link" href="./index.html">Главная</a></li>
               <li class="nav__item"><a class="nav__item-link" href="./registration.html">Регистрация в Avon</a></li>
               <li class="nav__item"><a class="nav__item-link" href="#">Бизнес</a></li>
               <li class="nav__item"><a class="nav__item-link" href="#">Галерея</a></li>
-              <li class="nav__item nav__item--active"><a class="nav__item-link" href="./catalogue.html">Каталог Avon</a></li>
+              <li class="nav__item"><a class="nav__item-link" href="./catalogue.html">Каталог Avon</a></li>
               <li class="nav__item"><a class="nav__item-link" href="#">Контакты</a></li>
               <li class="nav__item"><a class="nav__item-link" href="#">Статьи</a></li>
             </ul>
@@ -97,10 +97,24 @@
           </div>
         </aside>
         <div class="maincontent">
-          <div class="catalogues">
-            <h1 class="title">Выберите каталог для просмотра</h1>
-            <ul class="catalogues__list"></ul>
+          <h1 class="title">Кабинет администратора</h1>
+          <div class="admin__login">
+            <form action="./php/admin.php" method="POST"> 
+              <label class="form__label">
+                <div class="form__label-title">Логин</div>
+                <input class="form__input-text" type="text" name="admin_login" required>
+              </label>
+              <label class="form__label">
+                <div class="form__label-title">Пароль</div>
+                <input class="form__input-text" type="password" name="admin_password" required>
+              </label>
+              <div class="admin__login-btns">
+                <input class="button" type="submit" value="Принять">
+                <input class="button" type="reset" value="Cброс">
+              </div>
+            </form>
           </div>
+          <div class="admin__content"> </div>
         </div>
       </div>
     </main>
@@ -142,5 +156,4 @@
   </div>
   <!-- End of wrapper-->
   <script src="./main.min.js"></script>
-  <script src="./sub-scripts/catalogue.js"></script>
 </body>

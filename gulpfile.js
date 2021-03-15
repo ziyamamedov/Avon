@@ -35,7 +35,7 @@ task('clean', ()=>{
 });
 
 task('pug', () => {
-  return src(`${SRC_PATH}/pug/pages/*.pug`)
+  return src(`${SRC_PATH}/pug/pages/**/*.pug`)
     .pipe(pug({
       pretty:true
     }))

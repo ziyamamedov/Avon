@@ -4,9 +4,7 @@
 
 .catalogues__list {
   display: flex;
-  flex-wrap: wrap;
-  max-width: 100%;
-  justify-content: center;
+  overflow: auto;
 }
 
 .catalogue__item {
@@ -17,6 +15,7 @@
   &:last-child {
     margin-right: 0;
   }
+
 }
 .catalogue__item-img {
   max-width: 200px;
@@ -72,7 +71,7 @@
 
 .catalogue__slider-diplay-input {
   border: none; 
-  width: 200px;
+  width: 12.5rem;
   text-align: center;
   padding: 20px;
   outline: none;
