@@ -46,7 +46,7 @@
   $mail->Host = 'smtp.mail.ru';  												// Specify main and backup SMTP servers
   $mail->SMTPAuth = true;                               // Enable SMTP authentication
   $mail->Username = 'avon-cat@mail.ru'; // Ваш логин от почты с которой будут отправляться письма
-  $mail->Password = ''; // Ваш пароль от почты с которой будут отправляться письма
+  $mail->Password = 'Bogoroditsk2021'; // Ваш пароль от почты с которой будут отправляться письма
   $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
   $mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
   
